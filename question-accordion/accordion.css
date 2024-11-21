@@ -40,6 +40,9 @@ button.accordion:hover,
 button.accordion.is-open {
   background-color: #ddd;
 }
+button.accordion:focus {
+  background-color: rgb(127, 202, 255);
+}
 
 .accordion-content {
   background-color: white;
