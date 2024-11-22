@@ -12,6 +12,11 @@
 const accordionBtns = document.querySelectorAll(".accordion");
 
 accordionBtns.forEach((accordion) => {
+  if (accordion.getAttribute("aria-expanded") === "true") {
+    accordion.classList.add("is-open");
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+  
   accordion.onclick = function () {
     this.classList.toggle("is-open");
 
